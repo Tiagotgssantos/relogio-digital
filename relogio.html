@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relogio digital</title>
+    <link rel="stylesheet" href="relogio.css">
+</head>
+<body>
+    <div class="relogio">
+        <li class="item-circulo" style="--clr:#d9ff02;">
+            <div class="hora">
+                <i class="ponto hr_ponto"></i>
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70" id="hh"></circle>
+                
+                </svg>
+                <label id="hora">00</label>
+                
+                
+            </div>
+        </li>
+        <li class="item-circulo" style="--clr:#bb00ff;">
+            <div class="minuto">
+                <i class="ponto mm_ponto"></i>
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70" id="mm"></circle>
+                </svg>
+                <div id="minuto">00</div>
+                
+            </div>
+        </li>
+        <li class="item-circulo" style="--clr:#ff9100;">
+            <div class="segundo">
+                <i class="ponto ss_ponto"></i>
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70" id="ss"></circle>
+                </svg>
+                <label id="segundo">00</label>
+                
+            </div>
+        </li>
+        
+        
+        
+        
+    </div>
+    <script src="relogio.js"></script>
+</body>
+</html>

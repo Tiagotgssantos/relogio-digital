@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(33, 33, 33);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.relogio{
+    display: flex;
+    gap: 40px;
+    /*o gap afasta os elementos da lista*/
+    
+}
+
+.item-circulo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 150px;
+    height: 150px;
+  
+}
+
+.item-circulo svg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: -70px;
+    margin-left: -70px;
+    transform:rotate(270deg);
+}
+
+
+.item-circulo svg circle{
+    fill: transparent;
+    stroke-width: 4px;
+    stroke: var(--clr);
+    stroke-dasharray: 440;
+    transform: translate(2px, 2px);
+}
+
+.item-circulo svg circle:nth-of-type(1){
+    stroke: black;
+
+}
+
+.item-circulo .ponto{
+    position: absolute;
+    width: 3%;
+    height: 9%;
+    z-index: 10;
+    
+}
+
+.item-circulo .ponto::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: var(--clr);
+    border-radius: 50%;
+    margin-top: -70px;
+    margin-left: -70px;
+    display: flex;
+    margin-left: 1px;
+   
+}
+
+
+#hora, #minuto, #segundo{
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    margin-left: -10px;
+    margin-top: -10px;
+
+}
+
+
